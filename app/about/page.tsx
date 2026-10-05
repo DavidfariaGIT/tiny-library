@@ -18,7 +18,7 @@ export default function About() {
         <article className="w-[90%] block mx-auto">
           <div>
             <p className="text-[1.3rem] mt-4">About tiny island</p>
-            <h1 className="text-[3.3rem] font-medium">
+            <h1 className="text-[3.3rem] font-semibold">
               Small shelf, big impact
             </h1>
             <p className="text-[1.7rem] py-4 px-2 font-light">
@@ -73,7 +73,7 @@ export default function About() {
       <section>
         <div className="flex flex-col justify-evenly gap-5 py-10 px-8 mb-8">
           <div>
-            <h2 className="font-medium text-[3rem] my-5">Our Ethos</h2>
+            <h2 className="font-semibold text-[3rem] my-5">Our Ethos</h2>
             <p className="text-[1.7rem]  font-light">
               At Tiny Library, we believe a good book shouldn’t be hard to find.
               Our ethos is to create a small, carefully curated space

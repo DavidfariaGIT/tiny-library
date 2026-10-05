@@ -1,5 +1,9 @@
+import BookGrid from "../components/Bookgrid";
+
 export default function books() {
   return (
-    <h1>books page</h1>
+    <main>
+      <BookGrid />
+    </main>
   );
 }
