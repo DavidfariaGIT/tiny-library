@@ -2,14 +2,25 @@ import { getBooks } from "../lib/books"
 import Image from "next/image"
 import HeroImg from "@/public/hero-sqaure.png"
 import heartIcon from "@/public/heartIcon.png"
+import Link from "next/link"
+
+export type Book = {
+    title: string,
+    Author: string, 
+    Genre: string,
+    Likes: number, 
+    id: number
+}
 
 export default function BookGrid() {
-    const allBooks = getBooks()
+    const allBooks:Book[] = getBooks()
+    let id = 1
     
     return (
         <main>
-        <div className="flex flex-col items-center gap-10 w-[90%] mx-auto">
+        <div className="flex flex-col items-center gap-10 w-[90%] mx-auto mb-10">
         {allBooks.map(b => 
+            <Link key={id++} href={`/books/${id}`}>
             <div className="border rounded-2xl">
                 <Image 
                     src={HeroImg}
@@ -27,6 +38,7 @@ export default function BookGrid() {
                 </div>
                 </div>
             </div>
+            </Link>
         )}
         </div>
         </main>

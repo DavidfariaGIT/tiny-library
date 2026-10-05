@@ -2,7 +2,7 @@
 
 export default function Contact() {
     return (
-      <section className="px-10">
+      <section className="px-10 mb-15">
         <p className="mt-8 text-[1.6rem] font-light">ways to reach us</p>
         <h1 className="mt-8 text-[3rem] font-semibold">Contact</h1>
         <ol className="flex flex-col gap-10 ml-5 mt-7 pr-18">
