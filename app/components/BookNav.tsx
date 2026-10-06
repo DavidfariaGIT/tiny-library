@@ -9,7 +9,7 @@ export default function BookNav() {
   return (
     <section>
       <nav className="flex items-center justify-between px-10 overflow-scroll scrollbar-none">
-        <ul className="flex flex-row gap-14 mt-7 h-20">
+        <ul className="flex flex-row gap-14 mt-7 h-15">
             <Link href="/books/categories/fiction"><li className={`${pathname === "/books/categories/fiction" ? "text-orange-500" : ""} text-[1.1rem]`}>FICTION</li></Link>
             <Link href="/books/categories/non-fiction"><li className={ `${pathname === "/books/categories/non-fiction" ? "text-orange-500" : ""} text-[1.1rem] w-30`}>NON-FICTION</li></Link>
             <Link href="/books/categories/romance"><li className={ `${pathname === "/books/categories/romance" ? "text-orange-500" : ""} text-[1.1rem]`}>ROMANCE</li></Link>
